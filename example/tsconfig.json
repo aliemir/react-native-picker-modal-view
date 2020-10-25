@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "jsx": "react-native",
+    "lib": ["ESNext"],
+    "module": "CommonJS",
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "paths": {
+      "*": ["*"],
+      "@Components": ["../src/Components"],
+      "@Components/*": ["../src/Components/*"],
+      "@Enum": ["../src/Enum"],
+      "@Enum/*": ["../src/Enum/*"],
+      "@Helpers": ["../src/Helpers"],
+      "@Helpers/*": ["../src/Helpers/*"],
+      "@Interfaces": ["../src/Interfaces"],
+      "@Interfaces/*": ["../src/Interfaces/*"],
+      "@Styles": ["../src/Assets/Styles"],
+      "@Styles/*": ["../src/Assets/Styles/*"],
+      "@Images": ["../src/Assets/Images"],
+      "@Images/*": ["../src/Assets/Images/*"],
+      "react-native-picker-modal-view": ["../src"]
+    },
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ESNext"
+  },
+  "exclude": ["node_modules"]
+}
