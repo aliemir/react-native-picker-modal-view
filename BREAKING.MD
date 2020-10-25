@@ -1,6 +1,6 @@
 # Breaking Changes
 
--   v1 = 23 props
+-   v1 = 26 props
 
 -   v2 = 2 required - 13 optional props
 
