@@ -1,5 +1,9 @@
 # Breaking Changes
 
+-   v1 = 23 props
+
+-   v2 = 2 required - 13 optional props
+
 ## API Difference - Props
 
 -   **sort?**= { boolean | (a,b) => number; }
@@ -21,7 +25,7 @@
 
 -   **selected?**={item}
 
--   **onSelect?**={(item, index) => void;}
+-   **onSelect\***={(item, index) => void;}
 
 -   **onBack?**={boolean | () => void;}
 
