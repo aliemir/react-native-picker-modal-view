@@ -1,3 +1,3 @@
-export module CommonStyle {
-	export const BTN_HEIGHT: number = 50;
-}
+export const CommonStyle = {
+    BTN_HEIGHT: 50,
+};
