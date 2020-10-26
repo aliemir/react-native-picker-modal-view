@@ -4,6 +4,8 @@
 
 -   v2 = 2 required - 13 optional props
 
+-   [src/Interfaces/IProps.d.ts](src/Interfaces/IProps.d.ts)
+
 ## API Difference - Props
 
 -   **sort?**= { boolean | (a,b) => number; }
