@@ -20,7 +20,7 @@ export interface IProps {
     search?:
         | boolean
         | ((query: string | undefined, element: ListItem) => boolean)
-        | ReactElement<{ items: ListItem[]; onSearch: () => ListItem[] }>;
+        | ReactElement<{ items: ListItem[]; onSearch: (filteredItems: ListItem[]) => void }>;
     config?: {
         modalProps: ModalProps;
         flatListProps: FlatListProps<ListItem>;
