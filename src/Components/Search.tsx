@@ -6,7 +6,7 @@ import { View, TextInput, TouchableOpacity, Image } from "react-native";
 import { SearchStyle } from "@Styles";
 import { ISearch } from "@Interfaces";
 
-import leftArrow from "../Assets/Images/left-arrow.png";
+import leftArrow from "@Images/left-arrow.png";
 
 export class SearchComponent extends React.PureComponent<ISearch, {}> {
     public render(): JSX.Element {

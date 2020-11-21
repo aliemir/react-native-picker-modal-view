@@ -6,34 +6,18 @@ import { Text, View, TouchableOpacity } from "react-native";
 import { IListItemInDto } from "@Interfaces";
 import { ListItemStyle } from "@Styles";
 
-export class ListItemComponent extends React.PureComponent<
-    IListItemInDto,
-    Record<string, unknown>
-> {
-    public render(): JSX.Element {
-        const {
-            onSelectMethod,
-            defaultSelected,
-            list: { Name },
-        } = this.props;
-        return (
-            <TouchableOpacity
-                style={ListItemStyle.container}
-                activeOpacity={0.7}
-                onPress={() => onSelectMethod(this.props.list)}
+export const ListItemComponent = ({ item, selected }) => {
+    return (
+        <View style={ListItemStyle.btnContainer}>
+            <Text
+                style={[
+                    selected &&
+                        selected.label === item.label &&
+                        ListItemStyle.selected,
+                ]}
             >
-                <View style={ListItemStyle.btnContainer}>
-                    <Text
-                        style={[
-                            defaultSelected &&
-                                Name === defaultSelected.Name &&
-                                ListItemStyle.selected,
-                        ]}
-                    >
-                        {Name}
-                    </Text>
-                </View>
-            </TouchableOpacity>
-        );
-    }
-}
+                {item.label}
+            </Text>
+        </View>
+    );
+};
